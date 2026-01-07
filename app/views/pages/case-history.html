@@ -1,0 +1,42 @@
+{% extends "layouts/case-layout.html" %}
+
+{% set pageName="Case details" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">
+      Case history
+    </h1>
+
+    <div class="dwp-timeline">
+      <ol class="dwp-timeline__items">
+        <li class="dwp-timeline__item">
+          <p class="dwp-timeline__datetime">16 June 2024 at 1:00am</p>
+          <h2 class="dwp-timeline__heading">Bundle completed</h2>
+          <p class="dwp-timeline__by-line">by Jane Doe</p>
+        </li>
+        <li class="dwp-timeline__item">
+          <p class="dwp-timeline__datetime">16 April 2024 at 9:00am</p>
+          <h2 class="dwp-timeline__heading">Customer name changed</h2>
+          <p class="dwp-timeline__by-line">by Jane Doe</p>
+          <p class="dwp-timeline__content">Dutch Morgan to Arthur Morgan</p>
+        </li>
+        <li class="dwp-timeline__item">
+          <p class="dwp-timeline__datetime">28 March 2024 at 9:12am</p>
+          <h2 class="dwp-timeline__heading">Bundle started</h2>
+          <p class="dwp-timeline__by-line">by Jane Doe</p>
+        </li>
+        <li class="dwp-timeline__item">
+          <p class="dwp-timeline__datetime">12 March 2024 at 3:00pm</p>
+          <h2 class="dwp-timeline__heading">Case created</h2>
+        </li>
+      </ol>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">
+      John Marston profile
+    </h1>
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="office-location">
+        Office location
+      </label>
+      <select class="govuk-select" id="office-location" name="office-location">
+        <option value="option-1">Option 1</option>
+        <option value="option-2" selected>Newcastle</option>
+        <option value="option-3">Option 3</option>
+        <option value="option-4">Option 4</option>
+      </select>
+    </div>
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="file-upload-1">
+        Upload case ID's
+      </label>
+      <input class="govuk-file-upload" id="file-upload-1" name="fileUpload1" type="file">
+    </div>
+
+    <form action="javascript:history.back()" method="post" class="govuk-form-group">
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Save
+      </button>
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}

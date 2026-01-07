@@ -4,3 +4,67 @@
 // 
 
 // Add extra styles here
+
+.loading {
+  border: 12px solid #DEE0E2;
+  border-radius: 50%;
+  border-top-color: #005EA5;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  &-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 30px;
+  }
+  &-text {
+    margin-top: 25px;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.information-bar {
+  padding-left: 0;
+  padding-right: 40px;
+  border-bottom: 2px solid #b1b4b6;
+  &-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-details {
+    display: flex;
+    &-item {
+      padding: 15px;
+    }
+  }
+  &-actions {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.details-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  border: 1px solid #b1b4b6;
+  border-bottom: 5px solid #b1b4b6;
+  padding: 15px 0 10px 20px;
+  &-actions {
+    display: flex;
+  }
+}

@@ -1,0 +1,68 @@
+{#
+For guidance on how to use layouts see:
+https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
+#}
+
+{% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
+{% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
+
+{% block header %}
+
+  <header class="dwp-header">
+    <div class="dwp-header__content govuk-width-container">
+      <div class="dwp-header__service-name dwp-header__service-name--with-action">
+        <a href="/index.html" class="dwp-header__link">PIP Appeal Response Tool</a>
+      </div>
+      <div class="dwp-header__service-action">
+        <a href="/pages/agent-profile" class="dwp-header__link govuk-!-margin-right-7">John Marston</a>
+        <a href="#" class="dwp-header__link govuk-!-margin-right-5">Sign out</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="information-bar">
+    <div class="govuk-width-container information-bar-content">
+      <div class="information-bar-details">
+        <div class="information-bar-details-item">
+          <p class="govuk-body govuk-!-margin-bottom-1">Case ID</p>
+          <p class="govuk-body govuk-!-margin-0 govuk-!-font-weight-bold">#123456</p>
+        </div>
+        <div class="information-bar-details-item">
+          <p class="govuk-body govuk-!-margin-bottom-1">National Insurance number</p>
+          <p class="govuk-body govuk-!-margin-0 govuk-!-font-weight-bold">AA12345 C</p>
+        </div>
+        <div class="information-bar-details-item">
+          <p class="govuk-body govuk-!-margin-bottom-1">Name</p>
+          <p class="govuk-body govuk-!-margin-0 govuk-!-font-weight-bold">Arthur Morgan</p>
+        </div>
+      </div>
+      <div class="information-bar-actions">
+        <div class="govuk-button-group govuk-!-margin-0">
+          <a href="case-history" type="submit" class="govuk-button govuk-button--secondary govuk-!-margin-0 govuk-!-margin-right-5" data-module="govuk-button">
+            Case history
+          </a>
+          <a href="/pages/send-case" type="submit" class="govuk-button govuk-!-margin-0" data-module="govuk-button">
+            Close case
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block footer %}
+  <footer class="govuk-footer">
+    <div class="govuk-width-container">
+      <h2 class="govuk-visually-hidden">About this website</h2>
+      <ul class="govuk-footer__inline-list">
+        <li class="govuk-footer__inline-list-item">
+          <a class="govuk-footer__link" href="">Accessibility statement</a>
+        </li>
+        <li class="govuk-footer__inline-list-item">
+          <a class="govuk-footer__link" href="">Privacy</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+{% endblock %}

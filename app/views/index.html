@@ -7,13 +7,90 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
-
-    <h1 class="govuk-heading-xl">
-      {{ serviceName }}
+    <h1 class="govuk-heading-l">
+      John Marston
     </h1>
 
-    {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %}
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--m">My cases</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Case</th>
+          <th scope="col" class="govuk-table__header">ID</th>
+          <th scope="col" class="govuk-table__header">Customer</th>
+          <th scope="col" class="govuk-table__header"></th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Case 1</th>
+          <td class="govuk-table__cell">#12345</td>
+          <td class="govuk-table__cell">Arthur Morgan</td>
+          <td class="govuk-table__cell">
+            <ul class="govuk-summary-list__actions-list">
+            <li class="govuk-summary-list__actions-list-item">
+              <a class="govuk-link govuk-link--no-visited-state" href="#">Unassign<span class="govuk-visually-hidden"> case 1</span></a>
+            </li>
+            <li class="govuk-summary-list__actions-list-item">
+              <a class="govuk-link govuk-link--no-visited-state" href="pages/case-details">View<span class="govuk-visually-hidden"> case 1</span></a>
+            </li>
+          </ul>
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Case 2</th>
+          <td class="govuk-table__cell">#15646</td>
+          <td class="govuk-table__cell">Arthur Morgan</td>
+          <td class="govuk-table__cell">
+            <ul class="govuk-summary-list__actions-list">
+            <li class="govuk-summary-list__actions-list-item">
+              <a class="govuk-link govuk-link--no-visited-state" href="#">Unassign<span class="govuk-visually-hidden"> case 2</span></a>
+            </li>
+            <li class="govuk-summary-list__actions-list-item">
+              <a class="govuk-link govuk-link--no-visited-state" href="pages/case-details">View<span class="govuk-visually-hidden"> case 2</span></a>
+            </li>
+          </ul>
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Case 3</th>
+          <td class="govuk-table__cell">#87658</td>
+          <td class="govuk-table__cell">Arthur Morgan</td>
+          <td class="govuk-table__cell">
+            <ul class="govuk-summary-list__actions-list">
+            <li class="govuk-summary-list__actions-list-item">
+              <a class="govuk-link govuk-link--no-visited-state" href="#">Unassign<span class="govuk-visually-hidden"> case 3</span></a>
+            </li>
+            <li class="govuk-summary-list__actions-list-item">
+              <a class="govuk-link govuk-link--no-visited-state" href="pages/case-details">View<span class="govuk-visually-hidden"> case 3</span></a>
+            </li>
+          </ul>
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Case 4</th>
+          <td class="govuk-table__cell">#54332</td>
+          <td class="govuk-table__cell">Arthur Morgan</td>
+          <td class="govuk-table__cell">
+            <ul class="govuk-summary-list__actions-list">
+            <li class="govuk-summary-list__actions-list-item">
+              <a class="govuk-link govuk-link--no-visited-state" href="#">Unassign<span class="govuk-visually-hidden"> case 4</span></a>
+            </li>
+            <li class="govuk-summary-list__actions-list-item">
+              <a class="govuk-link govuk-link--no-visited-state" href="pages/case-details">View<span class="govuk-visually-hidden"> case 4</span></a>
+            </li>
+          </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form action="pages/new-case" method="post" class="govuk-form-group">
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Create new case
+      </button>
+    </form>
+
   </div>
 </div>
 
