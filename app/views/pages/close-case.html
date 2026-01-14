@@ -2,6 +2,14 @@
 
 {% set pageName="Home" %}
 
+{% block beforeContent %}
+
+  <div class="govuk-width-container">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  </div>
+
+{% endblock %}
+
 {% block content %}
 
 <div class="govuk-grid-row">
