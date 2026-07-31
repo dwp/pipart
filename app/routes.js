@@ -16,10 +16,10 @@ router.post('/gfs-answer', function (req, res) {
   // Check whether the variable matches a condition
   if (howManyBalls == "yes"){
     // Send user to next page
-    res.redirect('/pages/appeals-response/appeals-issues-raised')
+    res.redirect('/pages/appeals-response/appeals-grounds')
   } else {
     // Send user to ineligible page
-    res.redirect('/pages/appeals-response/appeals-issues-raised-2')
+    res.redirect('/pages/appeals-response/appeals-activities')
   }
 
 })

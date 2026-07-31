@@ -1,0 +1,532 @@
+{% extends "layouts/appeal-layout.html" %}
+
+{% set pageName="Home" %}
+
+{% block beforeContent %}
+
+  <div class="govuk-width-container">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  </div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <form action="appeals-issues-raised-5" method="post" class="govuk-form-group">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <span class="govuk-caption-l">Appeal response</span>
+            <h1 class="govuk-fieldset__heading">
+              Activities covered on claim
+            </h1>
+          </legend>
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input data-aria-controls="conditional-1" class="govuk-checkboxes__input" id="decision" name="decision" type="checkbox" value="1">
+              <label class="govuk-label govuk-checkboxes__label" for="decision">
+                Preparing food
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-1">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend">
+                    Covered by
+                  </legend>
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity1" name="activity1" type="radio" value="england">
+                      <label class="govuk-label govuk-radios__label" for="activity1">
+                        Activities specified in the appeal
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity1-2" name="activity1" type="radio" value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="activity1-2">
+                        Activities not claimed
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity1-3" name="activity1" type="radio" value="wales">
+                      <label class="govuk-label govuk-radios__label" for="activity1-3">
+                        Activities covered by the Decision Maker's decision
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity1-4" name="activity1" type="radio" value="northern-ireland">
+                      <label class="govuk-label govuk-radios__label" for="activity1-4">
+                        Activities covered by the Mandatory Reconsideration
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input data-aria-controls="conditional-2" class="govuk-checkboxes__input" id="decision-2" name="decision" type="checkbox" value="2">
+              <label class="govuk-label govuk-checkboxes__label" for="decision-2">
+                Taking nutrition
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-2">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend">
+                    Covered by
+                  </legend>
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity2" name="activity2" type="radio" value="england">
+                      <label class="govuk-label govuk-radios__label" for="activity2">
+                        Activities specified in the appeal
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity2-2" name="activity2" type="radio" value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="activity2-2">
+                        Activities not claimed
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity2-3" name="activity2" type="radio" value="wales">
+                      <label class="govuk-label govuk-radios__label" for="activity2-3">
+                        Activities covered by the Decision Maker's decision
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity2-4" name="activity2" type="radio" value="northern-ireland">
+                      <label class="govuk-label govuk-radios__label" for="activity2-4">
+                        Activities covered by the Mandatory Reconsideration
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input data-aria-controls="conditional-3" class="govuk-checkboxes__input" id="decision-3" name="decision" type="checkbox" value="3">
+              <label class="govuk-label govuk-checkboxes__label" for="decision-3">
+                Managing therapy or monitoring a health condition
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-3">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend">
+                    Covered by
+                  </legend>
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity3" name="activity3" type="radio" value="england">
+                      <label class="govuk-label govuk-radios__label" for="activity3">
+                        Activities specified in the appeal
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity3-2" name="activity3" type="radio" value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="activity3-2">
+                        Activities not claimed
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity3-3" name="activity3" type="radio" value="wales">
+                      <label class="govuk-label govuk-radios__label" for="activity3-3">
+                        Activities covered by the Decision Maker's decision
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity3-4" name="activity3" type="radio" value="northern-ireland">
+                      <label class="govuk-label govuk-radios__label" for="activity3-4">
+                        Activities covered by the Mandatory Reconsideration
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input data-aria-controls="conditional-4" class="govuk-checkboxes__input" id="decision" name="decision" type="checkbox" value="4">
+              <label class="govuk-label govuk-checkboxes__label" for="decision">
+                Washing and bathing
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-4">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend">
+                    Covered by
+                  </legend>
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity4" name="activity4" type="radio" value="england">
+                      <label class="govuk-label govuk-radios__label" for="activity4">
+                        Activities specified in the appeal
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity4-2" name="activity4" type="radio" value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="activity4-2">
+                        Activities not claimed
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity4-3" name="activity4" type="radio" value="wales">
+                      <label class="govuk-label govuk-radios__label" for="activity4-3">
+                        Activities covered by the Decision Maker's decision
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity4-4" name="activity4" type="radio" value="northern-ireland">
+                      <label class="govuk-label govuk-radios__label" for="activity4-4">
+                        Activities covered by the Mandatory Reconsideration
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input data-aria-controls="conditional-5" class="govuk-checkboxes__input" id="decision-2" name="decision" type="checkbox" value="5">
+              <label class="govuk-label govuk-checkboxes__label" for="decision-2">
+                Managing toilet needs or incontinence
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-5">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend">
+                    Covered by
+                  </legend>
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity5" name="activity5" type="radio" value="england">
+                      <label class="govuk-label govuk-radios__label" for="activity5">
+                        Activities specified in the appeal
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity5-2" name="activity5" type="radio" value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="activity5-2">
+                        Activities not claimed
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity5-3" name="activity5" type="radio" value="wales">
+                      <label class="govuk-label govuk-radios__label" for="activity5-3">
+                        Activities covered by the Decision Maker's decision
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity5-4" name="activity5" type="radio" value="northern-ireland">
+                      <label class="govuk-label govuk-radios__label" for="activity5-4">
+                        Activities covered by the Mandatory Reconsideration
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input data-aria-controls="conditional-6" class="govuk-checkboxes__input" id="decision-3" name="decision" type="checkbox" value="6">
+              <label class="govuk-label govuk-checkboxes__label" for="decision-3">
+                Dressing and undressing
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-6">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend">
+                    Covered by
+                  </legend>
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity6" name="activity6" type="radio" value="england">
+                      <label class="govuk-label govuk-radios__label" for="activity6">
+                        Activities specified in the appeal
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity6-2" name="activity6" type="radio" value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="activity6-2">
+                        Activities not claimed
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity6-3" name="activity6" type="radio" value="wales">
+                      <label class="govuk-label govuk-radios__label" for="activity6-3">
+                        Activities covered by the Decision Maker's decision
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity6-4" name="activity6" type="radio" value="northern-ireland">
+                      <label class="govuk-label govuk-radios__label" for="activity6-4">
+                        Activities covered by the Mandatory Reconsideration
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input data-aria-controls="conditional-7" class="govuk-checkboxes__input" id="decision" name="decision" type="checkbox" value="7">
+              <label class="govuk-label govuk-checkboxes__label" for="decision">
+                Communicating verbally
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-7">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend">
+                    Covered by
+                  </legend>
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity7" name="activity7" type="radio" value="england">
+                      <label class="govuk-label govuk-radios__label" for="activity7">
+                        Activities specified in the appeal
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity7-2" name="activity7" type="radio" value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="activity7-2">
+                        Activities not claimed
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity7-3" name="activity7" type="radio" value="wales">
+                      <label class="govuk-label govuk-radios__label" for="activity7-3">
+                        Activities covered by the Decision Maker's decision
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity7-4" name="activity7" type="radio" value="northern-ireland">
+                      <label class="govuk-label govuk-radios__label" for="activity7-4">
+                        Activities covered by the Mandatory Reconsideration
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input data-aria-controls="conditional-8" class="govuk-checkboxes__input" id="decision-2" name="decision" type="checkbox" value="8">
+              <label class="govuk-label govuk-checkboxes__label" for="decision-2">
+                Reading and understanding signs, symbols and words
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-8">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend">
+                    Covered by
+                  </legend>
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity8" name="activity8" type="radio" value="england">
+                      <label class="govuk-label govuk-radios__label" for="activity8">
+                        Activities specified in the appeal
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity8-2" name="activity8" type="radio" value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="activity8-2">
+                        Activities not claimed
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity8-3" name="activity8" type="radio" value="wales">
+                      <label class="govuk-label govuk-radios__label" for="activity8-3">
+                        Activities covered by the Decision Maker's decision
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity8-4" name="activity8" type="radio" value="northern-ireland">
+                      <label class="govuk-label govuk-radios__label" for="activity8-4">
+                        Activities covered by the Mandatory Reconsideration
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input data-aria-controls="conditional-9" class="govuk-checkboxes__input" id="decision-3" name="decision" type="checkbox" value="9">
+              <label class="govuk-label govuk-checkboxes__label" for="decision-3">
+                Engaging with other people face to face
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-9">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend">
+                    Covered by
+                  </legend>
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity9" name="activity9" type="radio" value="england">
+                      <label class="govuk-label govuk-radios__label" for="activity9">
+                        Activities specified in the appeal
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity9-2" name="activity9" type="radio" value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="activity9-2">
+                        Activities not claimed
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity9-3" name="activity9" type="radio" value="wales">
+                      <label class="govuk-label govuk-radios__label" for="activity9-3">
+                        Activities covered by the Decision Maker's decision
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity9-4" name="activity9" type="radio" value="northern-ireland">
+                      <label class="govuk-label govuk-radios__label" for="activity9-4">
+                        Activities covered by the Mandatory Reconsideration
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input data-aria-controls="conditional-10" class="govuk-checkboxes__input" id="decision" name="decision" type="checkbox" value="10">
+              <label class="govuk-label govuk-checkboxes__label" for="decision">
+                Making budgeting decisions
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-10">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend">
+                    Covered by
+                  </legend>
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity10" name="activity10" type="radio" value="england">
+                      <label class="govuk-label govuk-radios__label" for="activity10">
+                        Activities specified in the appeal
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity10-2" name="activity10" type="radio" value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="activity10-2">
+                        Activities not claimed
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity10-3" name="activity10" type="radio" value="wales">
+                      <label class="govuk-label govuk-radios__label" for="activity10-3">
+                        Activities covered by the Decision Maker's decision
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity10-4" name="activity10" type="radio" value="northern-ireland">
+                      <label class="govuk-label govuk-radios__label" for="activity10-4">
+                        Activities covered by the Mandatory Reconsideration
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input data-aria-controls="conditional-11" class="govuk-checkboxes__input" id="decision-2" name="decision" type="checkbox" value="11">
+              <label class="govuk-label govuk-checkboxes__label" for="decision-2">
+                Planning and following journeys
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-11">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend">
+                    Covered by
+                  </legend>
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity11" name="activity11" type="radio" value="england">
+                      <label class="govuk-label govuk-radios__label" for="activity11">
+                        Activities specified in the appeal
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity11-2" name="activity11" type="radio" value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="activity11-2">
+                        Activities not claimed
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity11-3" name="activity11" type="radio" value="wales">
+                      <label class="govuk-label govuk-radios__label" for="activity11-3">
+                        Activities covered by the Decision Maker's decision
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity11-4" name="activity11" type="radio" value="northern-ireland">
+                      <label class="govuk-label govuk-radios__label" for="activity11-4">
+                        Activities covered by the Mandatory Reconsideration
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input data-aria-controls="conditional-12" class="govuk-checkboxes__input" id="decision-3" name="decision" type="checkbox" value="12">
+              <label class="govuk-label govuk-checkboxes__label" for="decision-3">
+                Moving around
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-12">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend">
+                    Covered by
+                  </legend>
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity12" name="activity12" type="radio" value="england">
+                      <label class="govuk-label govuk-radios__label" for="activity12">
+                        Activities specified in the appeal
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity12-2" name="activity12" type="radio" value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="activity12-2">
+                        Activities not claimed
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity12-3" name="activity12" type="radio" value="wales">
+                      <label class="govuk-label govuk-radios__label" for="activity12-3">
+                        Activities covered by the Decision Maker's decision
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity12-4" name="activity12" type="radio" value="northern-ireland">
+                      <label class="govuk-label govuk-radios__label" for="activity12-4">
+                        Activities covered by the Mandatory Reconsideration
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button govuk-!-margin-top-5" data-module="govuk-button">
+        Continue
+      </button>
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}

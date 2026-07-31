@@ -9,29 +9,34 @@ const includeScheduleBox = document.getElementById("include-schedule-box");
 const checkbox = document.getElementById("include-schedule");
 const scheduleText = document.getElementById("schedule-text");
 
+if(generateTextBtn){
+  generateTextBtn.addEventListener("click", (event) => {
+    generatedLoading.style.display = 'block';
+    generateTextBtn.style.display = 'none';
+    originalText.disabled = true;
 
-generateTextBtn.addEventListener("click", (event) => {
-  generatedLoading.style.display = 'block';
-  generateTextBtn.style.display = 'none';
-  originalText.disabled = true;
+    setTimeout(() => {
+      generatedLoading.style.display = 'none';
+      generatedSummary.style.display = 'block';
+    }, 4000);
 
-  setTimeout(() => {
-    generatedLoading.style.display = 'none';
-    generatedSummary.style.display = 'block';
-  }, 4000);
+  })
+}
 
-})
+if(generatedSummaryDelete){
+  generatedSummaryDelete.addEventListener("click", (event) => {
+    event.preventDefault();
+    generatedSummary.style.display = 'none';
+    generateTextBtn.style.display = 'block';
+    originalText.disabled = false;
+  })
+}
 
-generatedSummaryDelete.addEventListener("click", (event) => {
-  event.preventDefault();
-  generatedSummary.style.display = 'none';
-  generateTextBtn.style.display = 'block';
-  originalText.disabled = false;
-})
-
-reviewFact.addEventListener("click", (event) => {
-  includeScheduleBox.style.display = 'block';
-})
+if (reviewFact){
+  reviewFact.addEventListener("click", (event) => {
+    includeScheduleBox.style.display = 'block';
+  })
+}
 
 
 checkbox.addEventListener("change", () => {

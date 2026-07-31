@@ -5,7 +5,7 @@
 {% block beforeContent %}
 
   <div class="govuk-width-container">
-    <a href="../case-details" class="govuk-back-link">Return to case details</a>
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
   </div>
 
 {% endblock %}
@@ -29,7 +29,7 @@
           Change of Circumstances
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link govuk-link--no-visited-state" href="#">Change<span class="govuk-visually-hidden"> name</span></a>
+          <a class="govuk-link govuk-link--no-visited-state" href="appeals-case-type">Change<span class="govuk-visually-hidden"> name</span></a>
         </dd>
       </div>
       <div class="govuk-summary-list__row">
@@ -40,53 +40,33 @@
           12/04/27 (Decision under appeal), 13/04/27 (MR)
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link govuk-link--no-visited-state" href="#">Change<span class="govuk-visually-hidden"> date of birth</span></a>
+          <a class="govuk-link govuk-link--no-visited-state" href="appeals-decision-assist">Change<span class="govuk-visually-hidden"> date of birth</span></a>
         </dd>
       </div>
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          Date of claim
+          12/04/27 (Decision under appeal)
         </dt>
         <dd class="govuk-summary-list__value">
-          27/05/27
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris placerat maximus nulla. Aenean ullamcorper commodo eleifend. Nulla laoreet lorem urna, quis ornare eros commodo ac.
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link govuk-link--no-visited-state" href="#">Change<span class="govuk-visually-hidden"> address</span></a>
+          <a class="govuk-link govuk-link--no-visited-state" href="appeals-dates-preview-1">Change<span class="govuk-visually-hidden"> date of birth</span></a>
         </dd>
       </div>
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          Date of Outcome Decision
+          13/04/27 (MR)
         </dt>
         <dd class="govuk-summary-list__value">
-          12/04/27
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris placerat maximus nulla. Aenean ullamcorper commodo eleifend. Nulla laoreet lorem urna, quis ornare eros commodo ac.
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link govuk-link--no-visited-state" href="#">Change<span class="govuk-visually-hidden"> address</span></a>
+          <a class="govuk-link govuk-link--no-visited-state" href="appeals-dates-preview-1">Change<span class="govuk-visually-hidden"> date of birth</span></a>
         </dd>
       </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Date of Reconsideration Decision
-        </dt>
-        <dd class="govuk-summary-list__value">
-          15/05/27
-        </dd>
-        <dd class="govuk-summary-list__actions">
-          <a class="govuk-link govuk-link--no-visited-state" href="#">Change<span class="govuk-visually-hidden"> address</span></a>
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Date of Appeal Request
-        </dt>
-        <dd class="govuk-summary-list__value">
-          20/05/27
-        </dd>
-        <dd class="govuk-summary-list__actions">
-          <a class="govuk-link govuk-link--no-visited-state" href="#">Change<span class="govuk-visually-hidden"> address</span></a>
-        </dd>
-      </div>
+      
+      
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Which is the decision under appeal date?
@@ -95,7 +75,7 @@
           Date of Outcome Decision (27/05/27)
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link govuk-link--no-visited-state" href="#">Change<span class="govuk-visually-hidden"> address</span></a>
+          <a class="govuk-link govuk-link--no-visited-state" href="appeals-appeal-date">Change<span class="govuk-visually-hidden"> address</span></a>
         </dd>
       </div>
       <div class="govuk-summary-list__row">
@@ -106,19 +86,52 @@
           {{ data['another-benefit'] }}
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link govuk-link--no-visited-state" href="#">Change<span class="govuk-visually-hidden"> address</span></a>
+          <a class="govuk-link govuk-link--no-visited-state" href="appeals-another-benefit">Change<span class="govuk-visually-hidden"> address</span></a>
         </dd>
       </div>
-      {% if data['benefit-answer'] %}
+      {% if data['another-benefit'] === "Yes" %}
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            What is the other benefit?
+            Select the benefits that apply
           </dt>
           <dd class="govuk-summary-list__value">
-            {{ data['benefit-answer'] }}
+            Carers, ESA, UC
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link govuk-link--no-visited-state" href="#">Change<span class="govuk-visually-hidden"> address</span></a>
+            <a class="govuk-link govuk-link--no-visited-state" href="appeals-benefit-answer">Change<span class="govuk-visually-hidden"> address</span></a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            What is the carer benefit?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Standard<br/>Although [Title] [Surname] has identified a high level of personal restriction, [he she] [Select is,was] entitled to Carer's Allowance (see Page [Page No]). To be entitled to Carer's Allowance a person must provide at least 35 hours of care to another disabled person each week. The Tribunal may wish to explore this further. 
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link govuk-link--no-visited-state" href="appeals-what-benefit">Change<span class="govuk-visually-hidden"> address</span></a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            What is the ESA benefit?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Standard<br/>Although [Title] [Surname] has identified a high level of personal restriction, [he she] [Select is,was] entitled to Carer's Allowance (see Page [Page No]). To be entitled to Carer's Allowance a person must provide at least 35 hours of care to another disabled person each week. The Tribunal may wish to explore this further. 
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link govuk-link--no-visited-state" href="appeals-what-benefit-2">Change<span class="govuk-visually-hidden"> address</span></a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            What is the UC benefit?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Standard<br/>Although [Title] [Surname] has identified a high level of personal restriction, [he she] [Select is,was] entitled to Carer's Allowance (see Page [Page No]). To be entitled to Carer's Allowance a person must provide at least 35 hours of care to another disabled person each week. The Tribunal may wish to explore this further. 
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link govuk-link--no-visited-state" href="appeals-what-benefit-3">Change<span class="govuk-visually-hidden"> address</span></a>
           </dd>
         </div>
       {% endif %}

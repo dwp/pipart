@@ -29,13 +29,21 @@
     <form action="case-details-customer-only" id="new-details-form" method="post" class="govuk-form-group">
       <div class="govuk-form-group">
         <label class="govuk-label" for="sort">
-          Title/Pronouns
+          Title
         </label>
         <select class="govuk-select" id="sort" name="sort">
           <option value="op1">Select</option>
-          <option value="mr">Mr</option>
-          <option value="op3">Option 3</option>
-          <option value="op4">Option 4</option>
+          <option value="mr" selected>Mr</option>
+          <option value="op3">Mrs</option>
+          <option value="op4">Miss</option>
+          <option value="op3">Ms</option>
+          <option value="op4">Mx</option>
+          <option value="op3">Dr</option>
+          <option value="op4">Professor (Prof)</option>
+          <option value="op3">Reverend (Rev)</option>
+          <option value="op4">Dame</option>
+          <option value="op3">Lord</option>
+          <option value="op4">Lady</option>
         </select>
       </div>
 
@@ -150,6 +158,10 @@
             </div>
           </div>
         </fieldset>
+      </div>
+
+      <div class="govuk-inset-text">
+        Changes will not update PIPCS. Update PIPCS separatly
       </div>
 
       <button type="submit" class="govuk-button govuk-!-margin-top-7" data-module="govuk-button">

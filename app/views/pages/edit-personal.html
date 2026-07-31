@@ -20,16 +20,31 @@
     </h1>
 
     <form action="case-details" method="post" class="govuk-form-group">
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="hmcts-ref">
+          HMCTS reference number
+        </label>
+        <input class="govuk-input" id="hmcts-ref" name="hmctsRef" type="text">
+      </div>
       
       <div class="govuk-form-group">
         <label class="govuk-label" for="sort">
-          Title/Pronouns
+          Title
         </label>
         <select class="govuk-select" id="sort" name="sort">
-          <option value="op1">Option 1</option>
+          <option value="op1">Select</option>
           <option value="mr" selected>Mr</option>
-          <option value="op3">Option 3</option>
-          <option value="op4">Option 4</option>
+          <option value="op3">Mrs</option>
+          <option value="op4">Miss</option>
+          <option value="op3">Ms</option>
+          <option value="op4">Mx</option>
+          <option value="op3">Dr</option>
+          <option value="op4">Professor (Prof)</option>
+          <option value="op3">Reverend (Rev)</option>
+          <option value="op4">Dame</option>
+          <option value="op3">Lord</option>
+          <option value="op4">Lady</option>
         </select>
       </div>
 
@@ -129,7 +144,7 @@
       </div>
 
       <div class="govuk-inset-text">
-        Changes here will not update PIPCS. Update PIPCS separately.
+        Changes will not update PIPCS. Update PIPCS separatly
       </div>
 
       <button type="submit" class="govuk-button govuk-!-margin-top-5" data-module="govuk-button">

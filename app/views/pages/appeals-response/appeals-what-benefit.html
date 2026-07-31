@@ -1,0 +1,81 @@
+{% extends "layouts/appeal-layout.html" %}
+
+{% set pageName="Home" %}
+
+{% block beforeContent %}
+
+  <div class="govuk-width-container">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  </div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <form name="second-benefit" action="appeals-what-benefit-2" method="post" class="govuk-form-group">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              <span class="govuk-caption-l">Appeal response</span>
+              What is the carer benefit?
+            </h1>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="benefit-answer-1" name="benefit-answer" type="radio" value="Carers" aria-describedby="benefit-answer-item-hint">
+              <label class="govuk-label govuk-radios__label" for="benefit-answer-1">
+                Standard
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="benefit-answer-2" name="benefit-answer" type="radio" value="Carers - no print out" aria-describedby="benefit-answer-2-item-hint">
+              <label class="govuk-label govuk-radios__label" for="benefit-answer-2">
+                Carers - no print out
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="benefit-answer-3" name="benefit-answer" type="radio" value="Carers - benefit and rate details" aria-describedby="benefit-answer-item-hint">
+              <label class="govuk-label govuk-radios__label" for="benefit-answer-3">
+                Carers - benefit and rate details
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <h2 class="govuk-heading-m govuk-!-margin-top-7">Benefit preview</h2>
+      <p id="benefit-preview-0" class="govuk-body">
+        Please select a benefit to view preview.
+      </p>
+      <p id="benefit-preview-1" class="govuk-body" style="display: none;">
+        Although [Title] [Surname] has identified a high level of personal restriction, [he she] [Select is,was] entitled to Carer's Allowance (see Page [Page No]). To be entitled to Carer's Allowance a person must provide at least 35 hours of care to another disabled person each week. The Tribunal may wish to explore this further.
+      </p>
+      <p id="benefit-preview-2" class="govuk-body" style="display: none;">
+        Although [Title] [Surname] has identified a high level of personal restriction, [he she] [Select is,was] entitled to Carer's Allowance. To be entitled to Carer's Allowance a person must provide at least 35 hours of care to another disabled person each week. The Tribunal may wish to explore this further.
+      </p>
+      <p id="benefit-preview-3" class="govuk-body" style="display: none;">
+        Although [Title] [Surname] has identified a high level of personal restriction, [he she] [Select is,was] entitled to Carer's Allowance (see Page [Page No]) and cares for somebody who is entitled to the [Select Carers Allowance related rate] of [Select Carers Allowance related benefit]. To be entitled to Carer's Allowance a person must provide at least 35 hours of care to another disabled person each week. The Tribunal may wish to explore this further.
+      </p>
+
+      <div class="govuk-button-group">
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+        <a href="#" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+          Save and exit
+        </a>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/benefit-preview.js"></script>
+{% endblock %}

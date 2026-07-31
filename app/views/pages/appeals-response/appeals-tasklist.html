@@ -1,14 +1,6 @@
-{% extends "layouts/appeal-layout-no-link.html" %}
+{% extends "layouts/appeal-layout.html" %}
 
 {% set pageName="Home" %}
-
-{% block beforeContent %}
-
-  <div class="govuk-width-container">
-    <a href="../case-details" class="govuk-back-link">Return to case details</a>
-  </div>
-
-{% endblock %}
 
 {% block content %}
 
@@ -19,99 +11,6 @@
       <span class="govuk-caption-l">Appeal response</span>
       Continue appeal response
     </h1>
-
-    <details class="govuk-details">
-      <summary class="govuk-details__summary">
-        <span class="govuk-details__summary-text">
-          Case details
-        </span>
-      </summary>
-      <div class="govuk-details__text">
-        <dl class="govuk-summary-list">
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Type of appeal
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Change of Circumstances
-            </dd>
-
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Decision assisted dates
-            </dt>
-            <dd class="govuk-summary-list__value">
-              12/04/27 (Decision under appeal), 13/04/27 (MR)
-            </dd>
-
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Date of claim
-            </dt>
-            <dd class="govuk-summary-list__value">
-              27/05/27
-            </dd>
-
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Date of Outcome Decision
-            </dt>
-            <dd class="govuk-summary-list__value">
-              12/04/27
-            </dd>
-
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Date of Reconsideration Decision
-            </dt>
-            <dd class="govuk-summary-list__value">
-              15/05/27
-            </dd>
-
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Date of Appeal Request
-            </dt>
-            <dd class="govuk-summary-list__value">
-              20/05/27
-            </dd>
-
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Which is the decision under appeal date?
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Date of Outcome Decision (27/05/27)
-            </dd>
-
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Is there another benefit?
-            </dt>
-            <dd class="govuk-summary-list__value">
-              {{ data['another-benefit'] }}
-            </dd>
-          </div>
-          {% if data['benefit-answer'] %}
-            <div class="govuk-summary-list__row">
-              <dt class="govuk-summary-list__key">
-                What is the other benefit?
-              </dt>
-              <dd class="govuk-summary-list__value">
-                {{ data['benefit-answer'] }}
-              </dd>
-            </div>
-          {% endif %}
-        </dl>
-      </div>
-    </details>
 
     <ul class="govuk-task-list">
       <li class="govuk-task-list__item govuk-task-list__item--with-link">
@@ -178,9 +77,6 @@
         <button type="submit" class="govuk-button" data-module="govuk-button">
           Continue
         </button>
-        <a href="#" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-          Save and exit
-        </a>
         <a href="#" class="govuk-button govuk-button--secondary" data-module="govuk-button">
           Delete all data and refresh from PIPCS
         </a>
